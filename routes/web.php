@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $title = 'Laravel Primi Passi';
+
+    $films = ['titanic', 'cars', 'shrek'];
+    // $fruits = [];
+
+    $user = [
+        'name' => 'Mario',
+        'surname' => 'Rossi',
+        'email' => 'Mario@rossi.it',
+        'age' => 23,
+        'city' => 'Roma',
+    ];
+
+    return view('home', compact('title', 'films', 'user'));
 });

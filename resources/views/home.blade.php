@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +9,18 @@
 <body>
     <h1> {{ $title }} </h1>
 
-    @if (count($fruits) > 0)
+    @if (count($films) > 0)
 
         <h3>Frutta:</h3>
         <ul>
-            @foreach ($fruits as $fruit)
-                <li> {{ $fruit }} </li>
+            @foreach ($films as $film)
+                <li> {{ $film }} </li>
             @endforeach
         </ul>
 
     @else
 
-        <h3>Non ci sono Frutti</h3>
+        <h3>Non ci sono film disponibili</h3>
 
     @endif
 
